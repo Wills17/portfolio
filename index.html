@@ -459,95 +459,89 @@
 
         <div class="w-24 h-1 mx-auto mb-12 bg-gradient-to-r from-primary to-secondary rounded-full" data-aos="zoom-in"></div>
 
+
         <!-- Contact Section -->
-        <section id="contact" class="mb-20">
-        <h2 class="text-3xl font-bold mb-8 text-center" data-aos="zoom-in">Get In Touch</h2>
+        <section id="contact" class="mb-24">
+        <div class="max-w-5xl mx-auto px-4">
 
-        <div class="bg-gray-800 rounded-xl p-10 shadow-lg max-w-4xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            
+            <!-- Section Header -->
+            <header class="text-center mb-14" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Let’s Talk</h2>
+            <p class="text-gray-400 max-w-xl mx-auto">
+                Have an idea, opportunity, or project in mind?  
+                I’m always open to meaningful conversations.
+            </p>
+            </header>
+
+            <!-- Content -->
+            <div class="grid md:grid-cols-2 gap-12 bg-gray-800/60 backdrop-blur rounded-2xl p-8 md:p-12 shadow-xl">
+
             <!-- Left: Contact Info -->
-            <div data-aos="fade-right">
-                <h3 class="text-2xl font-semibold mb-6 text-primary">Connect With Me</h3>
-                <ul class="space-y-5">
-                    <li class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-                        <i data-feather="mail" class="text-primary"></i>
-                        </div>
-                        <div>
-                        <p class="text-sm text-gray-400">Email</p>
-                        <a href="mailto:williamsodunayo70@gmail.com" target="_blank"
-                            class="hover:text-secondary transition">williamsodunayo70@gmail.com</a>
-                        </div>
-                    </li>
+            <div class="space-y-8" data-aos="fade-right">
 
-                    <li class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-                        <i data-feather="github" class="text-primary"></i>
-                        </div>
-                        <div>
-                        <p class="text-sm text-gray-400">GitHub</p>
-                        <a href="https://github.com/Wills17" target="_blank"
-                            class="hover:text-secondary transition">github.com/Wills17</a>
-                        </div>
-                    </li>
+                <div>
+                <h3 class="text-xl font-semibold mb-2">Reach me directly</h3>
+                <p class="text-gray-400 text-sm">
+                    Prefer email or socials? Here are the fastest ways.
+                </p>
+                </div>
 
-                    <li class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-                        <i data-feather="linkedin" class="text-primary"></i>
-                        </div>
-                        <div>
-                        <p class="text-sm text-gray-400">LinkedIn</p>
-                        <a href="https://www.linkedin.com/in/williams-odunayo" target="_blank"
-                            class="hover:text-secondary transition">linkedin.com/in/williams-odunayo</a>
-                        </div>
-                    </li>
-                    
-                    <li class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-                        <i data-feather="twitter" class="text-primary"></i>
-                        </div>
-                        <div>
-                        <p class="text-sm text-gray-400">Twitter</p>
-                        <a href="https://x.com/Wills_Python" target="_blank"
-                            class="hover:text-secondary transition">x.com/Wills_Python</a>
-                        </div>
-                    </li>
+                <ul class="space-y-5 text-sm">
+                <li class="flex items-center gap-4">
+                    <i data-feather="mail" class="w-5 h-5 text-primary"></i>
+                    <a href="mailto:williamsodunayo70@gmail.com" class="hover:text-secondary transition">williamsodunayo70@gmail.com</a>
+                </li>
+
+                <li class="flex items-center gap-4">
+                    <i data-feather="github" class="w-5 h-5 text-primary"></i>
+                    <a href="https://github.com/Wills17" target="_blank" class="hover:text-secondary transition">github.com/Wills17</a>
+                </li>
+
+                <li class="flex items-center gap-4">
+                    <i data-feather="linkedin" class="w-5 h-5 text-primary"></i>
+                    <a href="https://www.linkedin.com/in/williams-odunayo" target="_blank" class="hover:text-secondary transition">linkedin.com/in/williams-odunayo</a>
+                </li>
+
+                <li class="flex items-center gap-4">
+                    <i data-feather="twitter" class="w-5 h-5 text-primary"></i>
+                    <a href="https://x.com/Wills_Python" target="_blank" class="hover:text-secondary transition">x.com/Wills_Python</a>
+                </li>
                 </ul>
-
             </div>
 
             <!-- Right: Contact Form -->
             <div data-aos="fade-left">
-                <h3 class="text-2xl font-semibold mb-6 text-primary">Send Me a Message</h3>
-                <form action="https://formspree.io/f/xjkaldoq" method="POST" class="space-y-4">
+                <h3 class="text-xl font-semibold mb-6">Send a message</h3>
+
+                <form action="https://formspree.io/f/xjkaldoq" method="POST" class="space-y-5">
+
                 <div>
-                    <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Name</label>
-                    <input type="text" name="name" id="name" required
-                        class="w-full px-4 py-2 border border-gray-600 bg-gray-900 text-gray-100 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition">
+                    <input type="text" name="name" required
+                    placeholder="Your name"
+                    class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-500 focus:ring-2 focus:ring-primary focus:outline-none transition">
                 </div>
 
                 <div>
-                    <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
-                    <input type="email" name="email" id="email" required
-                        class="w-full px-4 py-2 border border-gray-600 bg-gray-900 text-gray-100 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition">
+                    <input type="email" name="email" required
+                    placeholder="Your email"
+                    class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-500 focus:ring-2 focus:ring-primary focus:outline-none transition">
                 </div>
 
                 <div>
-                    <label for="subject" class="block text-sm font-medium text-gray-300 mb-1">Subject</label>
-                    <input type="text" name="subject" id="subject" required
-                        class="w-full px-4 py-2 border border-gray-600 bg-gray-900 text-gray-100 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition">
+                    <input type="text" name="subject" required
+                    placeholder="What’s this about?"
+                    class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-500 focus:ring-2 focus:ring-primary focus:outline-none transition">
                 </div>
 
                 <div>
-                    <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
-                    <textarea name="message" id="message" rows="4" required
-                            class="w-full px-4 py-2 border border-gray-600 bg-gray-900 text-gray-100 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"></textarea>
+                    <textarea name="message" rows="4" required
+                    placeholder="Tell me a bit more…"
+                    class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-500 focus:ring-2 focus:ring-primary focus:outline-none transition"></textarea>
                 </div>
 
                 <button type="submit"
-                        class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-medium transition w-full project-card">
-                    Send Message
+                    class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-3 rounded-lg font-medium transition project-card">
+                    Send message →
                 </button>
                 </form>
             </div>
