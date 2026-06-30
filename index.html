@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Williams Odunayo | Machine Learning Engineer</title>
+  <title>Williams Odunayo | AI Developer & Machine Learning Engineer</title>
 
   <!-- Meta Tags -->
-  <meta name="description" content="Portfolio of Williams Odunayo — Machine Learning Engineer focused on building real, deployable AI systems that work.">
+  <meta name="description" content="Portfolio of Williams Odunayo — AI Developer & Machine Learning Engineer focused on building real, deployable AI systems that work.">
   <meta name="keywords" content="Machine Learning, AI Engineer, Portfolio, Deep Learning, Computer Vision, NLP, MLOps, Williams Odunayo">
 
-  <!-- (Facebook, LinkedIn) -->
-  <meta property="og:title" content="Williams Odunayo | AI/ML Engineer">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Williams Odunayo | AI Developer & ML Engineer">
   <meta property="og:description" content="Building real, usable AI and ML systems that work — practical, deployable, and impactful.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://wills17.github.io/portfolio">
   <meta property="og:image" content="images/ML.png">
 
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Williams Odunayo | Machine Learning Engineer">
+  <meta name="twitter:title" content="Williams Odunayo | AI Developer & ML Engineer">
   <meta name="twitter:description" content="Building real, usable AI and ML systems that work — practical, deployable, and impactful.">
   <meta name="twitter:image" content="images/ML.png">
   
   <!-- Favicon -->
-   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" type="image/png">
-
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" type="image/png">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -32,8 +32,9 @@
       theme: {
         extend: {
           colors: {
-            primary: '#6366f1',
-            secondary: '#10b981'
+            primary: '#14b8a6',
+            secondary: '#06b6d4',
+            darkBg: '#020617'
           }
         }
       }
@@ -50,504 +51,588 @@
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
 </head>
 
+<body class="bg-darkBg text-slate-100 min-h-screen overflow-x-hidden relative">
+    
+    <!-- Ambient light sources -->
+    <div class="glow-blob -top-40 -left-40"></div>
+    <div class="glow-blob top-[25%] -right-40"></div>
+    <div class="glow-blob top-[55%] -left-40"></div>
+    <div class="glow-blob top-[80%] -right-40"></div>
 
-<body class="bg-gray-900 text-gray-100 min-h-screen overflow-x-hidden">
     <custom-navbar></custom-navbar>
     
-    <main class="container mx-auto pt-24 px-4 py-12 max-w-6xl overflow-x-hidden">
+    <main class="container mx-auto pt-28 px-4 py-12 max-w-6xl overflow-x-hidden relative z-10">
+        
         <!-- Hero Section -->
-        <section class="mb-20">
-            <div class="flex flex-col md:flex-row items-center gap-8">
-                <div class="md:w-1/3 flex justify-center">
-                    <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center">
-                        <img src="images/profile.png" alt="Profile" class="w-60 h-60 md:w-72 md:h-72 rounded-full object-cover border-4 border-white" loading="lazy">
+        <section class="relative min-h-[80vh] flex items-center justify-center mb-24 rounded-3xl overflow-hidden border border-slate-900 bg-slate-950/45 backdrop-blur-sm px-6 py-12">
+            <!-- Background dot grid overlay -->
+            <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 1px 1px, #14b8a6 1px, transparent 0); background-size: 40px 40px;"></div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-12 relative z-10 w-full">
+                <!-- Profile Image -->
+                <div class="md:w-1/3 flex justify-center" data-aos="zoom-out">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-full blur opacity-40 group-hover:opacity-75 transition duration-500"></div>
+                        <div class="w-60 h-60 md:w-72 md:h-72 bg-slate-900 rounded-full flex items-center justify-center relative z-10 p-1.5 overflow-hidden border border-slate-800">
+                            <img src="images/profile.png" alt="Williams Odunayo" class="w-full h-full rounded-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-2 right-4 bg-slate-900 px-4 py-1.5 rounded-full shadow-lg border border-slate-800 flex items-center gap-2 text-xs font-semibold z-20">
+                            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                            <span class="text-slate-200">Open to Work</span>
+                        </div>
                     </div>
                 </div>
-                <div class="md:w-2/3">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Williams Odunayo</h1>
-                    <h2 class="text-2xl md:text-3xl text-secondary mb-4">Machine Learning Engineer</h2>
-                    <p class="text-xl italic opacity-80 mb-6">"Always Learning, Always Building."</p>
-                    <p class="text-lg mb-6">Building real, usable AI and ML systems that work — practical, deployable, and impactful.</p>
-                    <div class="flex gap-4">
-                        <a href="#projects" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg transition-all font-medium">View Projects</a>
-                        <a href="#contact" class="border border-primary text-primary hover:bg-primary/10 px-6 py-3 rounded-lg transition-all font-medium">Contact Me</a>
-                        <a href="docs/Williams_Odunayo_CV.pdf" target="_blank" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-medium shadow-md hover:shadow-lg transition">Download CV</a>
+                <!-- Profile Info -->
+                <div class="md:w-2/3 text-center md:text-left" data-aos="fade-up">
+                    <span class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20 mb-6 uppercase tracking-wider">AI Developer & ML Engineer</span>
+                    <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">
+                        Williams <span class="text-gradient">Odunayo</span>
+                    </h1>
+                    <p class="text-xl text-slate-300 mb-6 font-light leading-relaxed">
+                        Transforming raw data into actionable intelligence. Specializing in building, training, and deploying real, usable AI/ML systems that work.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4 justify-center md:justify-start mb-8">
+                        <a href="#projects" class="btn-primary px-6 py-3 rounded-lg font-medium transition-all duration-300">View Projects</a>
+                        <a href="#contact" class="btn-secondary px-6 py-3 rounded-lg font-medium transition-all duration-300">Contact Me</a>
+                        <a href="docs/Williams_Odunayo_CV.pdf" target="_blank" class="btn-secondary px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center gap-2">
+                            <span>Download CV</span>
+                            <i data-feather="download" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                    <!-- Highlight Stats Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-900">
+                        <div class="text-center md:text-left">
+                            <div class="text-2xl md:text-3xl font-extrabold text-primary">3+ Years</div>
+                            <div class="text-xs text-slate-400">Experience</div>
+                        </div>
+                        <div class="text-center md:text-left">
+                            <div class="text-2xl md:text-3xl font-extrabold text-primary">15+ Models</div>
+                            <div class="text-xs text-slate-400">Deployed</div>
+                        </div>
+                        <div class="text-center md:text-left">
+                            <div class="text-2xl md:text-3xl font-extrabold text-primary">5+ AI</div>
+                            <div class="text-xs text-slate-400">Demos / Apps</div>
+                        </div>
+                        <div class="text-center md:text-left">
+                            <div class="text-2xl md:text-3xl font-extrabold text-primary">90%+</div>
+                            <div class="text-xs text-slate-400">Accuracy Goal</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="w-24 h-1 mx-auto mb-12 bg-gradient-to-r from-primary to-secondary rounded-full" data-aos="zoom-in"></div>
-
         <!-- About Section -->
-        <section id="about" class="mb-20">
-            <h2 class="text-3xl font-bold mb-8 text-center" data-aos="zoom-in">About Me</h2>
-            <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row gap-12">
-
-                <!-- Left: Personal Story -->
-                <div class="md:w-1/2 space-y-4" data-aos="fade-right">
-                    <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
-                    <p class="text-gray-300 leading-relaxed">
+        <section id="about" class="mb-24">
+            <h2 class="text-3xl font-extrabold mb-12 text-center" data-aos="zoom-in">About Me</h2>
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
+                <!-- Narrative Story -->
+                <div class="md:w-1/2 space-y-6" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-4 text-slate-200">Who I Am</h3>
+                    <p class="text-slate-300 leading-relaxed">
                         I got into tech because I was curious about one thing — how machines learn from data and start to understand the world around us.
-                        That curiosity pulled me into <span class="text-secondary font-medium">computer vision</span>, 
-                        <span class="text-secondary font-medium">model training</span>, and  <span class="text-secondary font-medium">building AI that actually works.</span>
+                        That curiosity pulled me into <span class="text-primary font-semibold">computer vision</span>, 
+                        <span class="text-primary font-semibold">model training</span>, and <span class="text-primary font-semibold">building AI that actually works.</span>
                     </p>
-                    <p class="text-gray-300 leading-relaxed">
+                    <p class="text-slate-300 leading-relaxed">
                         Now, I focus on creating systems that are not just smart, but practical — models that can run efficiently, be deployed easily, 
                         and make real impact where it matters.
                     </p>
-                    <p class="text-gray-300 leading-relaxed">
+                    <p class="text-slate-300 leading-relaxed font-light">
                         Going forward, I’m exploring more autonomous, agent-like AI systems — ones that can make decisions, adapt, and collaborate.  
-                        My philosophy stays simple: <span class="italic">learn fast, build what works, and keep pushing what AI can do.</span>
+                        My philosophy stays simple: <span class="italic text-slate-400">learn fast, build what works, and keep pushing what AI can do.</span>
                     </p>
                 </div>
-
-                <!-- Right: Skill Focus -->
-                <div class="md:w-1/2 space-y-6" data-aos="fade-left">
-                <h3 class="text-2xl font-semibold text-secondary mb-4">What I Focus On</h3>
-
-                <div>
-                    <h4 class="font-medium text-lg mb-1 text-primary">Machine Learning</h4>
-                    <p class="text-gray-300">
-                    Designing and deploying ML systems that solve real-world problems — from classification to anomaly detection.
-                    </p>
-                </div>
-
-                <div>
-                    <h4 class="font-medium text-lg mb-1 text-secondary">Deep Learning</h4>
-                    <p class="text-gray-300">
-                    Working with CNNs, RNNs, and Transformers for tasks like medical imaging, emotion detection, and NLP.
-                    </p>
-                </div>
-
-                <div>
-                    <h4 class="font-medium text-lg mb-1 text-green-400">Data Engineering</h4>
-                    <p class="text-gray-300">
-                    Preprocessing, feature engineering, and creating scalable data pipelines for model training and evaluation.
-                    </p>
-                </div>
-
-                <div>
-                    <h4 class="font-medium text-lg mb-1 text-yellow-400">Cloud & MLOps</h4>
-                    <p class="text-gray-300">
-                    Deploying models using Flask, Docker, and Render. Familiar with model versioning and optimization for production.
-                    </p>
-                </div>
+                <!-- Competency Highlights -->
+                <div class="md:w-1/2 space-y-4" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-4 text-slate-200">Key Competencies</h3>
+                    
+                    <div class="glass-card p-4 rounded-xl flex gap-3">
+                        <div class="text-primary shrink-0"><i data-feather="check-circle" class="w-5 h-5"></i></div>
+                        <p class="text-slate-300 text-sm">End-to-end AI solution development from design to deployment.</p>
+                    </div>
+                    <div class="glass-card p-4 rounded-xl flex gap-3">
+                        <div class="text-primary shrink-0"><i data-feather="check-circle" class="w-5 h-5"></i></div>
+                        <p class="text-slate-300 text-sm">Machine learning model training, testing, and optimization for production.</p>
+                    </div>
+                    <div class="glass-card p-4 rounded-xl flex gap-3">
+                        <div class="text-primary shrink-0"><i data-feather="check-circle" class="w-5 h-5"></i></div>
+                        <p class="text-slate-300 text-sm">API development and system integration for AI applications.</p>
+                    </div>
+                    <div class="glass-card p-4 rounded-xl flex gap-3">
+                        <div class="text-primary shrink-0"><i data-feather="check-circle" class="w-5 h-5"></i></div>
+                        <p class="text-slate-300 text-sm">Problem-solving in resource-constrained and high-impact environments.</p>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <div class="w-24 h-1 mx-auto mb-12 bg-gradient-to-r from-primary to-secondary rounded-full" data-aos="zoom-in"></div>
 
         <!-- Skills Section -->
-        <section id="skills" class="mb-20">
-            <h2 class="text-3xl font-bold mb-8 text-center" data-aos="zoom-in">Tools & Frameworks</h2> 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-gray-800 p-6 rounded-xl project-card" data-aos="fade-left">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-                            <i data-feather="code" class="text-primary"></i>
+        <section id="skills" class="mb-24">
+            <h2 class="text-3xl font-extrabold mb-12 text-center" data-aos="zoom-in">Technical Skills</h2> 
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Box 1 -->
+                <div class="glass-card p-6 rounded-xl hover:shadow-card-hover duration-300 group" data-aos="fade-up">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors">
+                            <i data-feather="cpu" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-semibold">Languages</h3>
+                        <h3 class="text-lg font-bold text-slate-200">AI/ML Expertise</h3>
                     </div>
-                    <ul class="space-y-2">
-                        <li class="flex items-center gap-2">
-                            <i data-feather="chevron-right" class="w-4 h-4 text-secondary"></i>
-                            Python
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i data-feather="chevron-right" class="w-4 h-4 text-secondary"></i>
-                            JavaScript (basic familiarity)
-                        </li>
-                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">Machine Learning</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">Deep Learning</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">NLP</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">Computer Vision</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">Model Training</span>
+                    </div>
                 </div>
-
-                <div class="bg-gray-800 p-6 rounded-xl project-card" data-aos="fade-right">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-                            <i data-feather="cpu" class="text-primary"></i>
+                <!-- Box 2 -->
+                <div class="glass-card p-6 rounded-xl hover:shadow-card-hover duration-300 group" data-aos="fade-up" data-aos-delay="50">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors">
+                            <i data-feather="code" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-semibold">ML & DL</h3>
+                        <h3 class="text-lg font-bold text-slate-200">Programming & Frameworks</h3>
                     </div>
-                    <ul class="space-y-2">
-                        <li class="flex items-center gap-2">
-                            <i data-feather="chevron-right" class="w-4 h-4 text-secondary"></i>
-                            TensorFlow
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i data-feather="chevron-right" class="w-4 h-4 text-secondary"></i>
-                            PyTorch
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i data-feather="chevron-right" class="w-4 h-4 text-secondary"></i>
-                            Scikit-learn
-                        </li>
-                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">Python</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">TensorFlow & PyTorch</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">Scikit-learn</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">OpenCV</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">LangChain & FAISS</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">Flask & FastAPI</span>
+                    </div>
                 </div>
-
-                <div class="bg-gray-800 p-6 rounded-xl project-card" data-aos="fade-left">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-                            <i data-feather="eye" class="text-primary"></i>
+                <!-- Box 3 -->
+                <div class="glass-card p-6 rounded-xl hover:shadow-card-hover duration-300 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors">
+                            <i data-feather="database" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-semibold">Computer Vision</h3>
+                        <h3 class="text-lg font-bold text-slate-200">Data Engineering</h3>
                     </div>
-                    <ul class="space-y-2">
-                        <li class="flex items-center gap-2">
-                            <i data-feather="chevron-right" class="w-4 h-4 text-secondary"></i>
-                            OpenCV
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i data-feather="chevron-right" class="w-4 h-4 text-secondary"></i>
-                            Mediapipe
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i data-feather="chevron-right" class="w-4 h-4 text-secondary"></i>
-                            CNNs
-                        </li>
-                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">Data Preprocessing</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">Feature Engineering</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">Pandas & NumPy</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">Pipeline Automation</span>
+                    </div>
                 </div>
-
-                <div class="bg-gray-800 p-6 rounded-xl project-card" data-aos="fade-right">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-                            <i data-feather="message-square" class="text-primary"></i>
+                <!-- Box 4 -->
+                <div class="glass-card p-6 rounded-xl hover:shadow-card-hover duration-300 group" data-aos="fade-up">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors">
+                            <i data-feather="cloud-snow" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-semibold">NLP</h3>
+                        <h3 class="text-lg font-bold text-slate-200">Deployment & Integration</h3>
                     </div>
-                    <ul class="space-y-2">
-                        <li class="flex items-center gap-2">
-                            <i data-feather="chevron-right" class="w-4 h-4 text-secondary"></i>
-                            Transformers
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i data-feather="chevron-right" class="w-4 h-4 text-secondary"></i>
-                            LangChain
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i data-feather="chevron-right" class="w-4 h-4 text-secondary"></i>
-                            Gemini API
-                        </li>
-                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">Docker</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">Hugging Face Spaces</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">TensorFlow Lite</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">API Development</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">Cloud Deployment</span>
+                    </div>
+                </div>
+                <!-- Box 5 -->
+                <div class="glass-card p-6 rounded-xl hover:shadow-card-hover duration-300 group" data-aos="fade-up" data-aos-delay="50">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors">
+                            <i data-feather="map" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-200">Geospatial Intelligence</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">Remote Sensing & GIS</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">Spatial Analysis</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">Image Processing</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-xs font-semibold rounded-full text-slate-300">FUTA B.Sc Core</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <div class="w-24 h-1 mx-auto mb-12 bg-gradient-to-r from-primary to-secondary rounded-full" data-aos="zoom-in"></div>
+        <!-- Work Experience Section -->
+        <section id="experience" class="mb-24">
+            <h2 class="text-3xl font-extrabold mb-12 text-center" data-aos="zoom-in">Work Experience</h2>
+            <div class="max-w-4xl mx-auto relative">
+                <!-- Timeline vertical bar -->
+                <div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-slate-800 md:-translate-x-px"></div>
+
+                <!-- Exp Card 1 (Left) -->
+                <div class="relative flex flex-col md:flex-row gap-8 mb-16" data-aos="fade-right">
+                    <div class="absolute left-0 md:left-1/2 w-4 h-4 rounded-full bg-primary border-4 border-darkBg -translate-x-1.5 md:-translate-x-2 mt-6"></div>
+                    <div class="ml-8 md:ml-0 md:w-1/2 md:pr-12">
+                        <div class="glass-card rounded-xl p-6 shadow-xl">
+                            <span class="text-xs text-primary font-bold tracking-wider uppercase">02/2023 – 03/2025</span>
+                            <h3 class="text-xl font-bold mt-1 text-slate-200">ML Engineer (Part-Time)</h3>
+                            <h4 class="text-sm font-semibold text-secondary mb-4">Adsynthetica (Remote, US)</h4>
+                            <ul class="space-y-2 text-slate-300 text-sm leading-relaxed list-disc list-inside">
+                                <li>Developed & deployed machine learning models for advertising automation, content analysis, and campaign optimization.</li>
+                                <li>Built predictive models for marketing analytics, collaborating with product managers and data teams.</li>
+                                <li>Created data preprocessing pipelines for structured/unstructured data to optimize model training.</li>
+                                <li>Monitored & maintained deployed models in production, integrating AI solutions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hidden md:block md:w-1/2"></div>
+                </div>
+
+                <!-- Exp Card 2 (Right) -->
+                <div class="relative flex flex-col md:flex-row gap-8" data-aos="fade-left">
+                    <div class="absolute left-0 md:left-1/2 w-4 h-4 rounded-full bg-primary border-4 border-darkBg -translate-x-1.5 md:-translate-x-2 mt-6"></div>
+                    <div class="hidden md:block md:w-1/2"></div>
+                    <div class="ml-8 md:ml-0 md:w-1/2 md:pl-12">
+                        <div class="glass-card rounded-xl p-6 shadow-xl">
+                            <span class="text-xs text-primary font-bold tracking-wider uppercase">01/2025 – 05/2025</span>
+                            <h3 class="text-xl font-bold mt-1 text-slate-200">Junior Growth Consultant</h3>
+                            <h4 class="text-sm font-semibold text-secondary mb-4">FutaMart (Nigeria)</h4>
+                            <p class="text-xs text-slate-400 mb-3 italic">Campus-based e-commerce and logistics platform</p>
+                            <ul class="space-y-2 text-slate-300 text-sm leading-relaxed list-disc list-inside">
+                                <li>Supported logistics operations and customer service for student-focused e-commerce platform.</li>
+                                <li>Contributed to platform growth through student engagement initiatives and digital marketing campaigns.</li>
+                                <li>Assisted with order fulfillment processes and customer support automation strategies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Process Section -->
+        <section id="process" class="mb-24">
+            <h2 class="text-3xl font-extrabold mb-12 text-center" data-aos="zoom-in">My Development Process</h2>
+            <div class="relative">
+                <div class="hidden lg:block absolute top-1/2 left-0 right-0 h-px bg-slate-800 -translate-y-1/2"></div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-4">
+                    <!-- Step 1 -->
+                    <div class="glass-card rounded-xl p-5 border border-slate-900 flex flex-col justify-between group" data-aos="fade-up">
+                        <div>
+                            <div class="relative mb-4">
+                                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-darkBg font-bold text-sm">1</div>
+                            </div>
+                            <h3 class="font-bold text-slate-200 mb-2">Discovery & Setup</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed">Understanding data requirements, outlining pipeline infrastructure, and assessing model feasibility.</p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="glass-card rounded-xl p-5 border border-slate-900 flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="50">
+                        <div>
+                            <div class="relative mb-4">
+                                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-darkBg font-bold text-sm">2</div>
+                            </div>
+                            <h3 class="font-bold text-slate-200 mb-2">Data Processing</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed">Feature engineering, cleaning raw inputs, handling unstructured imagery/text, and vector embeddings.</p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="glass-card rounded-xl p-5 border border-slate-900 flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="100">
+                        <div>
+                            <div class="relative mb-4">
+                                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-darkBg font-bold text-sm">3</div>
+                            </div>
+                            <h3 class="font-bold text-slate-200 mb-2">Model Tuning</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed">Iteratively training custom CNN, XGBoost, or Transformer models and optimizing hyper-parameters.</p>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="glass-card rounded-xl p-5 border border-slate-900 flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="150">
+                        <div>
+                            <div class="relative mb-4">
+                                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-darkBg font-bold text-sm">4</div>
+                            </div>
+                            <h3 class="font-bold text-slate-200 mb-2">Verification</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed">Verifying target accuracies (90%+ on scanners), testing edge cases, and logging inference latencies.</p>
+                        </div>
+                    </div>
+                    <!-- Step 5 -->
+                    <div class="glass-card rounded-xl p-5 border border-slate-900 flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="200">
+                        <div>
+                            <div class="relative mb-4">
+                                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-darkBg font-bold text-sm">5</div>
+                            </div>
+                            <h3 class="font-bold text-slate-200 mb-2">MLOps / Deploy</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed">Containerizing with Docker, creating web APIs (FastAPI/Flask), and hosting live demos on HF / Render.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="mb-20">
-            <h2 class="text-3xl font-bold mb-8 text-center" data-aos="zoom-in">Key Projects</h2>
+        <section id="projects" class="mb-24">
+            <h2 class="text-3xl font-extrabold mb-12 text-center" data-aos="zoom-in">Featured Projects</h2>
             
-            <div class="space-y-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Project 1 -->
-                <div class="bg-gray-800 rounded-xl p-6 shadow-lg project-card" data-aos="fade-left">
-                    <div class="flex flex-col md:flex-row gap-6">
-                        <div class="md:w-1/3">
-                            <div class="bg-gray-700 aspect-video rounded-lg overflow-hidden">
-                                <img src="images/BrainScanAI.png" alt="BrainScan AI" class="w-full h-full object-cover" loading="lazy">
+                <div class="glass-card rounded-2xl overflow-hidden shadow-xl" data-aos="fade-up">
+                    <div class="aspect-video overflow-hidden border-b border-slate-900">
+                        <img src="images/Fridge2Dish.png" alt="Fridge2Dish" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="p-6 flex flex-col justify-between h-[340px] md:h-[300px]">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">Computer Vision & Generative AI</span>
+                                <a href="https://wills17-fridge2dish.hf.space" target="_blank" class="text-slate-400 hover:text-primary transition-colors"><i data-feather="github" class="w-5 h-5"></i></a>
                             </div>
+                            <h3 class="text-xl font-bold text-slate-200 mb-2 hover:text-primary transition-colors">Fridge2Dish</h3>
+                            <p class="text-xs text-slate-400 mb-4 leading-relaxed">Developed end-to-end computer vision pipeline combining custom CNN (TensorFlow) with YOLOv8 for ingredient detection. Generates structured recipes via Gemini with Qwen fallback.</p>
                         </div>
-                        <div class="md:w-2/3">
-                            <h3 class="text-2xl font-bold mb-2">BrainScan AI – Brain Tumor Detection</h3>
-                            <p class="text-gray-300 mb-4">MRI-based brain tumor classification using TensorFlow & OpenCV. Achieved over 90% accuracy; deployed on Render via Flask + TFLite.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">TensorFlow</span>
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Flask</span>
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">TFLite</span>
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">OpenCV</span>
+                        <div class="border-t border-slate-900 pt-4">
+                            <div class="flex flex-wrap gap-1.5 mb-2">
+                                <span class="px-2 py-0.5 bg-slate-900 text-[10px] text-slate-400 rounded">TensorFlow</span>
+                                <span class="px-2 py-0.5 bg-slate-900 text-[10px] text-slate-400 rounded">FastAPI</span>
+                                <span class="px-2 py-0.5 bg-slate-900 text-[10px] text-slate-400 rounded">Docker</span>
                             </div>
-                            <a href="https://brain-cancer-prediction-td8j.onrender.com" target="_blank" class="inline-flex items-center text-secondary hover:text-secondary/80 transition-colors">
-                                <i data-feather="play-circle" class="w-4 h-4 mr-2"></i>
-                                View Demo
-                            </a>
+                            <div class="flex items-center gap-1.5 text-xs text-slate-400">
+                                <i data-feather="check-circle" class="w-4 h-4 text-primary shrink-0"></i>
+                                <span>Ingredient detection using custom CNN + YOLOv8.</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="bg-gray-800 rounded-xl p-6 shadow-lg project-card" data-aos="fade-left">
-                    <div class="flex flex-col md:flex-row gap-6">
-                        <div class="md:w-1/3">
-                            <div class="bg-gray-700 aspect-video rounded-lg overflow-hidden">
-                                <img src="images/EmotiSense.png" alt="EmotiSense" class="w-full h-full object-cover"  loading="lazy">
+                <div class="glass-card rounded-2xl overflow-hidden shadow-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="aspect-video overflow-hidden border-b border-slate-900">
+                        <img src="images/AskDoc.png" alt="Ask Your Doc" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="p-6 flex flex-col justify-between h-[340px] md:h-[300px]">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">RAG Chatbot</span>
+                                <a href="https://wills17-document-rag-system.hf.space" target="_blank" class="text-slate-400 hover:text-primary transition-colors"><i data-feather="github" class="w-5 h-5"></i></a>
                             </div>
+                            <h3 class="text-xl font-bold text-slate-200 mb-2 hover:text-primary transition-colors">Ask-Your-Doc</h3>
+                            <p class="text-xs text-slate-400 mb-4 leading-relaxed">Built a RAG chatbot using Flask, LangChain, and Gemini API. Integrated FAISS vector stores and MiniLM embeddings for context retrieval and semantic search.</p>
                         </div>
-                        <div class="md:w-2/3">
-                            <h3 class="text-2xl font-bold mb-2">EmotiSense – AI Emotion Detection</h3>
-                            <p class="text-gray-300 mb-4">Real-time facial emotion recognition using CNNs and Mediapipe. Supports both .h5 and .tflite models with optional voice feedback.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">TensorFlow</span>
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">OpenCV</span>
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Flask</span>
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Mediapipe</span>
+                        <div class="border-t border-slate-900 pt-4">
+                            <div class="flex flex-wrap gap-1.5 mb-2">
+                                <span class="px-2 py-0.5 bg-slate-900 text-[10px] text-slate-400 rounded">LangChain</span>
+                                <span class="px-2 py-0.5 bg-slate-900 text-[10px] text-slate-400 rounded">FAISS</span>
+                                <span class="px-2 py-0.5 bg-slate-900 text-[10px] text-slate-400 rounded">Gemini API</span>
                             </div>
-                            <a href="https://mood-dectector-playground.onrender.com" target="_blank" class="inline-flex items-center text-secondary hover:text-secondary/80 transition-colors">
-                                <i data-feather="play-circle" class="w-4 h-4 mr-2"></i>
-                                View Demo
-                            </a>
+                            <div class="flex items-center gap-1.5 text-xs text-slate-400">
+                                <i data-feather="check-circle" class="w-4 h-4 text-primary shrink-0"></i>
+                                <span>Context-aware chatbot with localized embeddings.</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="bg-gray-800 rounded-xl p-6 shadow-lg project-card" data-aos="fade-left">
-                    <div class="flex flex-col md:flex-row gap-6">
-                        <div class="md:w-1/3">
-                            <div class="bg-gray-700 aspect-video rounded-lg overflow-hidden">
-                                <img src="images/AskDoc.png" alt="Ask Your Doc" class="w-full h-full object-cover" loading="lazy">
+                <div class="glass-card rounded-2xl overflow-hidden shadow-xl" data-aos="fade-up">
+                    <div class="aspect-video overflow-hidden border-b border-slate-900">
+                        <img src="images/EmotiSense.png" alt="EmotiSense" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="p-6 flex flex-col justify-between h-[340px] md:h-[300px]">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">Computer Vision</span>
+                                <a href="https://mood-dectector-playground.onrender.com" target="_blank" class="text-slate-400 hover:text-primary transition-colors"><i data-feather="play-circle" class="w-5 h-5"></i></a>
                             </div>
+                            <h3 class="text-xl font-bold text-slate-200 mb-2 hover:text-primary transition-colors">EmotiSense</h3>
+                            <p class="text-xs text-slate-400 mb-4 leading-relaxed">Real-time facial emotion recognition using CNNs and Mediapipe. Supports edge inference via optimized TensorFlow Lite models with voice synthesis outputs.</p>
                         </div>
-                        <div class="md:w-2/3">
-                            <h3 class="text-2xl font-bold mb-2">Ask Your Doc – AI Document Chatbot</h3>
-                            <p class="text-gray-300 mb-4">Lightweight chatbot that lets users chat with their documents (PDF, text). Built with Flask, LangChain, Gemini API, and FAISS for embeddings.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">LangChain</span>
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Flask</span>
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Gemini API</span>
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">FAISS</span>
+                        <div class="border-t border-slate-900 pt-4">
+                            <div class="flex flex-wrap gap-1.5 mb-2">
+                                <span class="px-2 py-0.5 bg-slate-900 text-[10px] text-slate-400 rounded">TensorFlow Lite</span>
+                                <span class="px-2 py-0.5 bg-slate-900 text-[10px] text-slate-400 rounded">OpenCV</span>
+                                <span class="px-2 py-0.5 bg-slate-900 text-[10px] text-slate-400 rounded">Mediapipe</span>
                             </div>
-                            <a href="https://wills17-document-rag-system.hf.space" target="_blank" class="inline-flex items-center text-secondary hover:text-secondary/80 transition-colors">
-                                <i data-feather="play-circle" class="w-4 h-4 mr-2"></i>
-                                View Demo
-                            </a>
+                            <div class="flex items-center gap-1.5 text-xs text-slate-400">
+                                <i data-feather="check-circle" class="w-4 h-4 text-primary shrink-0"></i>
+                                <span>Low-latency edge recognition with audio feedback.</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 4 -->
-                <div class="bg-gray-800 rounded-xl p-6 shadow-lg project-card" data-aos="fade-left">
-                    <div class="flex flex-col md:flex-row gap-6">
-
-                        <!-- Left: Image -->
-                        <div class="md:w-1/3">
-                            <div class="bg-gray-700 aspect-video rounded-lg overflow-hidden">
-                                <img 
-                                    src="images/Fridge2Dish.png" alt="Fridge2Dish" class="w-full h-full object-cover" loading="lazy">
+                <div class="glass-card rounded-2xl overflow-hidden shadow-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="aspect-video overflow-hidden border-b border-slate-900">
+                        <img src="images/BrainScanAI.png" alt="BrainScan AI" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="p-6 flex flex-col justify-between h-[340px] md:h-[300px]">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">Medical Diagnostics</span>
+                                <a href="https://brain-cancer-prediction-td8j.onrender.com" target="_blank" class="text-slate-400 hover:text-primary transition-colors"><i data-feather="play-circle" class="w-5 h-5"></i></a>
                             </div>
+                            <h3 class="text-xl font-bold text-slate-200 mb-2 hover:text-primary transition-colors">BrainScan AI</h3>
+                            <p class="text-xs text-slate-400 mb-4 leading-relaxed">MRI-based brain tumor classification using TensorFlow. Reached 90%+ diagnostic scanner accuracy; packaged onto Flask and TFLite.</p>
                         </div>
-
-                        <!-- Right: Text -->
-                        <div class="md:w-2/3">
-                            <h3 class="text-2xl font-bold mb-2">Fridge2Dish – AI Cooking Assistant</h3>
-                            <p class="text-gray-300 mb-4">
-                                AI-powered cooking assistant that takes an image of raw ingredients and recommends 
-                                complete recipes. Combines image classification with LLM reasoning to turn fridge 
-                                contents into real meals.
-                            </p>
-
-                            <!-- Tech badges -->
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">TensorFlow</span>
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">FastAPI</span>
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">OpenCV</span>
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">LLM API</span>
+                        <div class="border-t border-slate-900 pt-4">
+                            <div class="flex flex-wrap gap-1.5 mb-2">
+                                <span class="px-2 py-0.5 bg-slate-900 text-[10px] text-slate-400 rounded">TensorFlow</span>
+                                <span class="px-2 py-0.5 bg-slate-900 text-[10px] text-slate-400 rounded">Flask</span>
+                                <span class="px-2 py-0.5 bg-slate-900 text-[10px] text-slate-400 rounded">OpenCV</span>
                             </div>
-
-                            <!-- Link -->
-                            <a  href="https://wills17-fridge2dish.hf.space" target="_blank" class="inline-flex items-center text-secondary hover:text-secondary/80 transition-colors">
-                                <i data-feather="github" class="w-4 h-4 mr-2"></i>
-                                View Demo
-                            </a>
+                            <div class="flex items-center gap-1.5 text-xs text-slate-400">
+                                <i data-feather="check-circle" class="w-4 h-4 text-primary shrink-0"></i>
+                                <span>Achieved 90%+ scanner classification accuracy.</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 5
-                <div class="bg-gray-800 rounded-xl p-6 shadow-lg project-card" data-aos="fade-left">
-                    <div class="flex flex-col md:flex-row gap-6">
-                        <div class="md:w-1/3">
-                            <div class="bg-gray-700 aspect-video rounded-lg overflow-hidden">
-                                <img src="http://static.photos/technology/1024x576/4" alt="CyberSentinel" class="w-full h-full object-cover">
-                            </div>
-                        </div>
-                        <div class="md:w-2/3">
-                            <h3 class="text-2xl font-bold mb-2">CyberSentinel – Autonomous Threat Detection (In Progress)</h3>
-                            <p class="text-gray-300 mb-4">(In Progress) Multi-Agent Reinforcement Learning system for decentralized cyber defense. Uses adversarial training and anomaly detection.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Reinforcement Learning</span>
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Multi-Agent Systems</span>
-                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Anomaly Detection</span>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                
-                <!-- View more -->
-                <div class="text-center mt-16" data-aos="fade-up">
-                    <a href="https://github.com/Wills17?tab=repositories"
-                        class="inline-flex items-center bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-medium shadow-md hover:shadow-lg transition project-card">
-                        Explore More Projects on Github
-                        <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
-                    </a>
-                </div>
-
+            <!-- View more -->
+            <div class="text-center mt-16" data-aos="fade-up">
+                <a href="https://github.com/Wills17?tab=repositories" target="_blank"
+                    class="inline-flex items-center btn-primary px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl transition duration-300 gap-2">
+                    <span>Explore More Projects on Github</span>
+                    <i data-feather="arrow-right" class="w-5 h-5"></i>
+                </a>
             </div>
         </section>
 
-        <div class="w-24 h-1 mx-auto mb-12 bg-gradient-to-r from-primary to-secondary rounded-full" data-aos="zoom-in"></div>
-
-        <!-- Interests Section -->
-        <section class="mb-20">
-            <h2 class="text-3xl font-bold mb-8 text-center" data-aos="zoom-in">Interests & Future Direction</h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-gray-800 p-6 rounded-xl flex items-center gap-4" data-aos="fade-right">
-                    <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                        <i data-feather="cpu" class="text-primary"></i>
+        <!-- Certifications & Education Section -->
+        <section class="mb-24">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Certifications -->
+                <div data-aos="fade-right">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                            <i data-feather="award" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-200">Certifications</h3>
                     </div>
-                    <span>Agentic AI Systems</span>
+                    <div class="space-y-4">
+                        <div class="glass-card rounded-lg p-4 flex justify-between items-start">
+                            <div>
+                                <h4 class="font-semibold text-slate-200">Introducing Generative AI with AWS</h4>
+                                <p class="text-xs text-slate-400">Amazon Web Services • Issued 07/2025</p>
+                            </div>
+                            <span class="text-xs text-primary font-semibold">CredLink</span>
+                        </div>
+                        <div class="glass-card rounded-lg p-4 flex justify-between items-start">
+                            <div>
+                                <h4 class="font-semibold text-slate-200">Programming Foundations: Beyond the Fundamentals</h4>
+                                <p class="text-xs text-slate-400">Issued 06/2024</p>
+                            </div>
+                            <span class="text-xs text-primary font-semibold">CredLink</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="bg-gray-800 p-6 rounded-xl flex items-center gap-4" data-aos="fade-left">
-                    <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                        <i data-feather="refresh-cw" class="text-primary"></i>
+                <!-- Education -->
+                <div data-aos="fade-left">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                            <i data-feather="book-open" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-200">Education</h3>
                     </div>
-                    <span>Reinforcement Learning</span>
-                </div>
-
-                <div class="bg-gray-800 p-6 rounded-xl flex items-center gap-4" data-aos="fade-right">
-                    <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                        <i data-feather="eye" class="text-primary"></i>
+                    <div class="space-y-4">
+                        <div class="glass-card rounded-lg p-4">
+                            <span class="text-[10px] bg-primary/10 text-primary border border-primary/20 px-2 py-0.5 rounded-full font-bold">07/2022 – Present</span>
+                            <h4 class="font-semibold text-slate-200 mt-2">Bachelor of Science (B.Sc)</h4>
+                            <p class="text-xs text-slate-400">Federal University of Technology, Akure (FUTA)</p>
+                            <div class="mt-3 flex flex-wrap gap-1.5">
+                                <span class="px-2 py-0.5 bg-slate-900 text-[10px] text-slate-400 rounded">Remote Sensing & GIS</span>
+                                <span class="px-2 py-0.5 bg-slate-900 text-[10px] text-slate-400 rounded">Spatial Analysis & Modeling</span>
+                                <span class="px-2 py-0.5 bg-slate-900 text-[10px] text-slate-400 rounded">Image Interpretation</span>
+                            </div>
+                        </div>
                     </div>
-                    <span>Computer Vision</span>
-                </div>
-
-                <div class="bg-gray-800 p-6 rounded-xl flex items-center gap-4" data-aos="fade-left">
-                    <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                        <i data-feather="package" class="text-primary"></i>
-                    </div>
-                    <span>Production-ready AI</span>
-                </div>
-
-                <div class="bg-gray-800 p-6 rounded-xl flex items-center gap-4" data-aos="fade-right">
-                    <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                        <i data-feather="activity" class="text-primary"></i>
-                    </div>
-                    <span>AI Applications in Healthcare & Cybersecurity</span>
-                </div>
-
-                <div class="bg-gray-800 p-6 rounded-xl flex items-center gap-4" data-aos="fade-left">
-                    <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                        <i data-feather="aperture" class="text-primary"></i>
-                    </div>
-                    <span>Generative AI</span>
-                </div>
-
-                <div class="bg-gray-800 p-6 rounded-xl flex items-center gap-4" data-aos="fade-right">
-                    <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                        <i data-feather="map-pin" class="text-primary"></i>
-                    </div>
-                    <span>Geospatial Intelligence</span>
-                </div>
-
-                <div class="bg-gray-800 p-6 rounded-xl flex items-center gap-4" data-aos="fade-left">
-                    <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                        <i data-feather="github" class="text-primary"></i>
-                    </div>
-                    <span>Open-source Projects</span>
-                </div>
-
-                <div class="bg-gray-800 p-6 rounded-xl flex items-center gap-4" data-aos="fade-right">
-                    <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                        <i data-feather="layers" class="text-primary"></i>
-                    </div>
-                    <span>Real-World ML Systems</span>
                 </div>
             </div>
         </section>
-
-        <div class="w-24 h-1 mx-auto mb-12 bg-gradient-to-r from-primary to-secondary rounded-full" data-aos="zoom-in"></div>
-
 
         <!-- Contact Section -->
         <section id="contact" class="mb-24">
-        <div class="max-w-5xl mx-auto px-4">
+            <div class="max-w-5xl mx-auto px-4">
+                <!-- Section Header -->
+                <header class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Let’s Talk</h2>
+                    <p class="text-slate-400 max-w-xl mx-auto">
+                        Have an idea, opportunity, or project in mind?  
+                        I’m always open to meaningful conversations.
+                    </p>
+                </header>
 
-            <!-- Section Header -->
-            <header class="text-center mb-14" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Let’s Talk</h2>
-            <p class="text-gray-400 max-w-xl mx-auto">
-                Have an idea, opportunity, or project in mind?  
-                I’m always open to meaningful conversations.
-            </p>
-            </header>
+                <!-- Content -->
+                <div class="grid md:grid-cols-2 gap-12 glass-card rounded-2xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+                    <!-- Background accent glow -->
+                    <div class="absolute -right-20 -bottom-20 w-60 h-60 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
 
-            <!-- Content -->
-            <div class="grid md:grid-cols-2 gap-12 bg-gray-800/60 backdrop-blur rounded-2xl p-8 md:p-12 shadow-xl">
+                    <!-- Left: Contact Info -->
+                    <div class="space-y-8 relative z-10" data-aos="fade-right">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-3 text-slate-200">Reach me directly</h3>
+                            <p class="text-slate-400 text-sm">
+                                Prefer email or socials? Here are the fastest ways.
+                            </p>
+                        </div>
 
-            <!-- Left: Contact Info -->
-            <div class="space-y-8" data-aos="fade-right">
+                        <ul class="space-y-6 text-sm">
+                            <li class="flex items-center gap-4 group">
+                                <div class="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors">
+                                    <i data-feather="mail" class="w-5 h-5"></i>
+                                </div>
+                                <a href="mailto:williamsodunayo70@gmail.com" class="text-slate-300 hover:text-primary transition font-medium">williamsodunayo70@gmail.com</a>
+                            </li>
 
-                <div>
-                <h3 class="text-xl font-semibold mb-2">Reach me directly</h3>
-                <p class="text-gray-400 text-sm">
-                    Prefer email or socials? Here are the fastest ways.
-                </p>
+                            <li class="flex items-center gap-4 group">
+                                <div class="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors">
+                                    <i data-feather="github" class="w-5 h-5"></i>
+                                </div>
+                                <a href="https://github.com/Wills17" target="_blank" class="text-slate-300 hover:text-primary transition font-medium">github.com/Wills17</a>
+                            </li>
+
+                            <li class="flex items-center gap-4 group">
+                                <div class="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors">
+                                    <i data-feather="linkedin" class="w-5 h-5"></i>
+                                </div>
+                                <a href="https://www.linkedin.com/in/williams-odunayo" target="_blank" class="text-slate-300 hover:text-primary transition font-medium">linkedin.com/in/williams-odunayo</a>
+                            </li>
+
+                            <li class="flex items-center gap-4 group">
+                                <div class="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors">
+                                    <i data-feather="twitter" class="w-5 h-5"></i>
+                                </div>
+                                <a href="https://x.com/Wills_Python" target="_blank" class="text-slate-300 hover:text-primary transition font-medium">x.com/Wills_Python</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <div class="relative z-10" data-aos="fade-left">
+                        <h3 class="text-2xl font-bold mb-6 text-slate-200">Send a message</h3>
+
+                        <form action="https://formspree.io/f/xjkaldoq" method="POST" class="space-y-5">
+                            <div>
+                                <input type="text" name="name" required placeholder="Your name"
+                                class="w-full px-4 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-slate-100 placeholder-slate-500 focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none transition">
+                            </div>
+
+                            <div>
+                                <input type="email" name="email" required placeholder="Your email"
+                                class="w-full px-4 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-slate-100 placeholder-slate-500 focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none transition">
+                            </div>
+
+                            <div>
+                                <input type="text" name="subject" required placeholder="What’s this about?"
+                                class="w-full px-4 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-slate-100 placeholder-slate-500 focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none transition">
+                            </div>
+
+                            <div>
+                                <textarea name="message" rows="4" required placeholder="Tell me a bit more…"
+                                class="w-full px-4 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-slate-100 placeholder-slate-500 focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none transition"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full btn-primary px-6 py-4 rounded-lg font-bold transition-all duration-300 flex items-center justify-center gap-2">
+                                <span>Send Message</span>
+                                <i data-feather="send" class="w-4 h-4"></i>
+                            </button>
+                        </form>
+                    </div>
                 </div>
-
-                <ul class="space-y-5 text-sm">
-                <li class="flex items-center gap-4">
-                    <i data-feather="mail" class="w-5 h-5 text-primary"></i>
-                    <a href="mailto:williamsodunayo70@gmail.com" class="hover:text-secondary transition">williamsodunayo70@gmail.com</a>
-                </li>
-
-                <li class="flex items-center gap-4">
-                    <i data-feather="github" class="w-5 h-5 text-primary"></i>
-                    <a href="https://github.com/Wills17" target="_blank" class="hover:text-secondary transition">github.com/Wills17</a>
-                </li>
-
-                <li class="flex items-center gap-4">
-                    <i data-feather="linkedin" class="w-5 h-5 text-primary"></i>
-                    <a href="https://www.linkedin.com/in/williams-odunayo" target="_blank" class="hover:text-secondary transition">linkedin.com/in/williams-odunayo</a>
-                </li>
-
-                <li class="flex items-center gap-4">
-                    <i data-feather="twitter" class="w-5 h-5 text-primary"></i>
-                    <a href="https://x.com/Wills_Python" target="_blank" class="hover:text-secondary transition">x.com/Wills_Python</a>
-                </li>
-                </ul>
             </div>
-
-            <!-- Right: Contact Form -->
-            <div data-aos="fade-left">
-                <h3 class="text-xl font-semibold mb-6">Send a message</h3>
-
-                <form action="https://formspree.io/f/xjkaldoq" method="POST" class="space-y-5">
-
-                <div>
-                    <input type="text" name="name" required
-                    placeholder="Your name"
-                    class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-500 focus:ring-2 focus:ring-primary focus:outline-none transition">
-                </div>
-
-                <div>
-                    <input type="email" name="email" required
-                    placeholder="Your email"
-                    class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-500 focus:ring-2 focus:ring-primary focus:outline-none transition">
-                </div>
-
-                <div>
-                    <input type="text" name="subject" required
-                    placeholder="What’s this about?"
-                    class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-500 focus:ring-2 focus:ring-primary focus:outline-none transition">
-                </div>
-
-                <div>
-                    <textarea name="message" rows="4" required
-                    placeholder="Tell me a bit more…"
-                    class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-500 focus:ring-2 focus:ring-primary focus:outline-none transition"></textarea>
-                </div>
-
-                <button type="submit"
-                    class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-3 rounded-lg font-medium transition project-card">
-                    Send message →
-                </button>
-                </form>
-            </div>
-
-            </div>
-        </div>
         </section>
 
     </main>
@@ -557,12 +642,19 @@
     <script src="components/navbar.js"></script>
     <script src="components/footer.js"></script>
     <script src="scripts.js"></script>
-    <script>feather.replace();</script>
+    <script>
+      // Initialize feather icons on load
+      document.addEventListener('DOMContentLoaded', () => {
+        if (typeof feather !== 'undefined') {
+          feather.replace();
+        }
+      });
+    </script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
     AOS.init({
         duration: 800,
-        offset: 150,  
+        offset: 100,  
         easing: 'ease-in-out',
         once: true,        
     });

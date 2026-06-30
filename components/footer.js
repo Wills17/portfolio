@@ -4,13 +4,14 @@ class CustomFooter extends HTMLElement {
     shadow.innerHTML = `
       <style>
         footer {
-          background: rgba(17, 24, 39, 0.9);
-          backdrop-filter: blur(10px);
-          color: white;
-          padding: 2rem 1rem;
+          background: rgba(2, 6, 23, 0.8);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          color: #64748b;
+          padding: 3rem 1.5rem;
           text-align: center;
-          margin-top: auto;
-          border-top: 1px solid rgba(255, 255, 255, 0.1);
+          border-top: 1px solid rgba(255, 255, 255, 0.04);
+          font-family: 'Inter', sans-serif;
         }
 
         .footer-content {
@@ -19,66 +20,32 @@ class CustomFooter extends HTMLElement {
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 1rem;
+          gap: 1.25rem;
         }
 
-        .footer-links {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 1.5rem;
-          margin-bottom: 0.5rem;
-        }
-
-        .footer-links a {
-          color: rgba(255, 255, 255, 0.7);
+        .logo {
+          color: #e2e8f0;
+          font-weight: 800;
+          font-size: 1.05rem;
+          letter-spacing: -0.025em;
           text-decoration: none;
-          transition: color 0.25s ease;
-          display: flex;
-          align-items: center;
-          gap: 0.4rem;
-          font-weight: 500;
         }
 
-        .footer-links a:hover {
-          color: #10b981;
-        }
-
-        .footer-links i {
-          width: 18px;
-          height: 18px;
-        }
+        .logo-dot { color: #14b8a6; }
 
         .copyright {
-          color: rgba(255, 255, 255, 0.5);
-          font-size: 0.875rem;
-        }
-
-        @media (max-width: 640px) {
-          footer {
-            padding: 1.5rem 1rem;
-          }
-          .footer-links {
-            gap: 1rem;
-          }
-          .footer-links a {
-            font-size: 0.9rem;
-          }
+          font-size: 0.8rem;
+          color: #475569;
         }
       </style>
 
       <footer>
         <div class="footer-content">
-          <p class="copyright">&copy; ${new Date().getFullYear()} Williams Odunayo. All rights reserved.</p>
+          <span class="logo">Williams<span class="logo-dot">.</span></span>
+          <p class="copyright">&copy; ${new Date().getFullYear()} Williams Odunayo. All rights reserved. Built with passion.</p>
         </div>
       </footer>
     `;
-
-    // Load Feather icons inside shadow DOM
-    const featherScript = document.createElement('script');
-    featherScript.src = "https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js";
-    featherScript.onload = () => feather.replace();
-    shadow.appendChild(featherScript);
   }
 }
 
